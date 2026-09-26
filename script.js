@@ -82,7 +82,7 @@ function adicionarMensagem(texto, tipo) {
     mensagem.textContent = texto;
 
     chat.appendChild(mensagem);
-
+localStorage.setItem("chatbotHistorico", chat.innerHTML);
     chat.scrollTop = chat.scrollHeight;
 }
 
