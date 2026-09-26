@@ -133,3 +133,15 @@ body {
 .entrada button:hover {
     background: #12806a;
 }
+.entrada,
+.botoes {
+    position: relative;
+    z-index: 10;
+}
+
+.entrada input,
+.entrada button,
+.botoes button {
+    position: relative;
+    z-index: 11;
+}
