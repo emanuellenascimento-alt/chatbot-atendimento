@@ -121,3 +121,12 @@ function limparConversa() {
         </div>
     `;
 }
+window.onload = function () {
+
+    const historico = localStorage.getItem("chatbotHistorico");
+
+    if (historico) {
+        document.getElementById("chat").innerHTML = historico;
+    }
+
+};
