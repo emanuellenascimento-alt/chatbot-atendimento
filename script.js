@@ -5,7 +5,7 @@ function responder(mensagem) {
         return "Nossos serviços possuem preços personalizados. 😊";
     }
 
-    if (mensagem.includes("serviço") || mensagem.includes("servico")) {
+    if (mensagem.includes("serviço") || mensagem.includes("servicos")) {
         return "Oferecemos criação de sites, landing pages e automações.";
     }
 
@@ -30,7 +30,6 @@ function responder(mensagem) {
 
 
 function enviarMensagem() {
-
     const campo = document.getElementById("mensagem");
     const texto = campo.value.trim();
 
@@ -51,7 +50,6 @@ function enviarMensagem() {
 
 
 function adicionarMensagem(texto, tipo) {
-
     const chat = document.getElementById("chat");
 
     const mensagem = document.createElement("div");
@@ -64,8 +62,9 @@ function adicionarMensagem(texto, tipo) {
 
     chat.scrollTop = chat.scrollHeight;
 }
-function perguntaRapida(pergunta) {
 
+
+function perguntaRapida(pergunta) {
     adicionarMensagem(pergunta, "usuario");
 
     const resposta = responder(pergunta);
