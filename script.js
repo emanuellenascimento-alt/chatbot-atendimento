@@ -62,14 +62,22 @@ function adicionarMensagem(texto, tipo) {
 
     chat.scrollTop = chat.scrollHeight;
 }
-
-
 function perguntaRapida(pergunta) {
     adicionarMensagem(pergunta, "usuario");
+
+    adicionarMensagem("🤖 Digitando...", "bot");
 
     const resposta = responder(pergunta);
 
     setTimeout(function () {
+        const chat = document.getElementById("chat");
+
+        const mensagens = chat.querySelectorAll(".bot");
+        const ultimaMensagem = mensagens[mensagens.length - 1];
+
+        ultimaMensagem.remove();
+
         adicionarMensagem(resposta, "bot");
-    }, 500);
+    }, 1000);
 }
+
