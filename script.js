@@ -85,7 +85,13 @@ function adicionarMensagem(texto, tipo) {
 localStorage.setItem("chatbotHistorico", chat.innerHTML);
     chat.scrollTop = chat.scrollHeight;
 }
+let total = Number(localStorage.getItem("totalMensagens")) || 0;
 
+total++;
+
+localStorage.setItem("totalMensagens", total);
+
+document.getElementById("totalMensagens").textContent = total;
 
 function perguntaRapida(pergunta) {
 
