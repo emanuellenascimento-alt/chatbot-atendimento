@@ -121,7 +121,7 @@ function limparConversa() {
         </div>
     `;
 }
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function () {
 
     const historico = localStorage.getItem("chatbotHistorico");
 
@@ -129,4 +129,4 @@ window.onload = function () {
         document.getElementById("chat").innerHTML = historico;
     }
 
-};
+});
