@@ -109,3 +109,19 @@ body {
     color: white;
     cursor: pointer;
 }
+.whatsapp {
+    display: block;
+    margin: 0 15px 10px;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    background: #25D366;
+    color: white;
+    border-radius: 9px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.whatsapp:hover {
+    background: #1ebe5d;
+}
