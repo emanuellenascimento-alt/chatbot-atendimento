@@ -34,7 +34,17 @@ if (mensagem.includes("localização") || mensagem.includes("localizacao")) {
     ) {
         return "Olá! 👋 Como posso ajudar?";
     }
+if (mensagem.includes("pagamento")) {
+    return "Aceitamos diferentes formas de pagamento. Entre em contato para saber mais.";
+}
 
+if (mensagem.includes("prazo")) {
+    return "O prazo depende do serviço solicitado. Podemos analisar sua necessidade e informar o prazo.";
+}
+
+if (mensagem.includes("localização") || mensagem.includes("localizacao")) {
+    return "Nosso atendimento é realizado principalmente de forma online.";
+}
     return "Desculpe, ainda não entendi. Tente perguntar sobre preços, serviços ou horário.";
 }
 
