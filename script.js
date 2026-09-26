@@ -1,6 +1,16 @@
 function responder(mensagem) {
     mensagem = mensagem.toLowerCase();
+if (mensagem.includes("pagamento")) {
+    return "Aceitamos diferentes formas de pagamento. Entre em contato para saber mais.";
+}
 
+if (mensagem.includes("prazo")) {
+    return "O prazo depende do serviço solicitado. Podemos analisar sua necessidade e informar o prazo.";
+}
+
+if (mensagem.includes("localização") || mensagem.includes("localizacao")) {
+    return "Nosso atendimento é realizado principalmente de forma online.";
+}
     if (mensagem.includes("preço") || mensagem.includes("preco")) {
         return "Nossos serviços possuem preços personalizados. 😊";
     }
