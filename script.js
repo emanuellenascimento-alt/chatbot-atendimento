@@ -89,3 +89,13 @@ function perguntaRapida(pergunta) {
 
     }, 1000);
 }
+function limparConversa() {
+
+    const chat = document.getElementById("chat");
+
+    chat.innerHTML = `
+        <div class="mensagem bot">
+            Olá! 👋 Como posso ajudar você?
+        </div>
+    `;
+}
