@@ -14,8 +14,7 @@ function responder(mensagem) {
     }
 
     if (mensagem.includes("atendente")) {
-    return "Claro! Clique no botão abaixo para falar com um atendente.";
-}
+        return "Claro! Você pode falar com um atendente pelo WhatsApp.";
     }
 
     if (
@@ -64,37 +63,9 @@ function adicionarMensagem(texto, tipo) {
 
     chat.appendChild(mensagem);
 
-    if (
-        tipo === "bot" &&
-        texto.includes("Clique no botão abaixo")
-    ) {
-
-        const botao = document.createElement("button");
-
-        botao.textContent = "💬 Falar com atendente";
-
-        botao.style.marginTop = "8px";
-        botao.style.padding = "10px 15px";
-        botao.style.border = "none";
-        botao.style.borderRadius = "8px";
-        botao.style.background = "#25D366";
-        botao.style.color = "white";
-        botao.style.cursor = "pointer";
-
-        botao.onclick = function () {
-
-            window.open(
-                "https://wa.me/5500000000000",
-                "_blank"
-            );
-
-        };
-
-        chat.appendChild(botao);
-    }
-
     chat.scrollTop = chat.scrollHeight;
 }
+
 
 function perguntaRapida(pergunta) {
 
@@ -118,6 +89,8 @@ function perguntaRapida(pergunta) {
 
     }, 1000);
 }
+
+
 function limparConversa() {
 
     const chat = document.getElementById("chat");
