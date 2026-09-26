@@ -64,3 +64,13 @@ function adicionarMensagem(texto, tipo) {
 
     chat.scrollTop = chat.scrollHeight;
 }
+function perguntaRapida(pergunta) {
+
+    adicionarMensagem(pergunta, "usuario");
+
+    const resposta = responder(pergunta);
+
+    setTimeout(function () {
+        adicionarMensagem(resposta, "bot");
+    }, 500);
+}
