@@ -15,40 +15,34 @@ body {
 .chatbot {
     width: 430px;
     max-width: 95%;
-    background: #ffffff;
+    background: white;
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
-/* CABEÇALHO */
-
 .cabecalho {
-    background: #ffffff;
-    color: #1f2937;
+    background: #1f2937;
+    color: white;
     padding: 20px;
-    border-bottom: 1px solid #e5e7eb;
 }
 
 .cabecalho h1 {
     margin: 0;
     font-size: 20px;
-    font-weight: 600;
 }
 
 .cabecalho p {
     margin: 6px 0 0;
-    color: #16a085;
+    color: #a7f3d0;
     font-size: 13px;
 }
-
-/* CHAT */
 
 .chat {
     height: 360px;
     padding: 20px;
     overflow-y: auto;
-    background: #f8fafb;
+    background: #f8fafc;
 }
 
 .mensagem {
@@ -57,91 +51,61 @@ body {
     margin-bottom: 12px;
     border-radius: 12px;
     line-height: 1.4;
-    font-size: 14px;
 }
 
 .bot {
-    background: #e9eef0;
-    color: #263238;
+    background: #e5e7eb;
+    color: #1f2937;
 }
 
 .usuario {
-    background: #16a085;
+    background: #374151;
     color: white;
     margin-left: auto;
 }
-
-/* BOTÕES */
 
 .botoes {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 8px;
     padding: 15px;
-    background: #ffffff;
-    border-top: 1px solid #eeeeee;
+    background: white;
 }
 
 .botoes button {
     padding: 11px;
-    border: 1px solid #d9e1e3;
-    background: #ffffff;
+    border: 1px solid #d1d5db;
+    background: white;
     color: #374151;
     border-radius: 9px;
     cursor: pointer;
-    font-size: 13px;
-    transition: 0.2s;
 }
 
 .botoes button:hover {
-    background: #f1f8f6;
-    border-color: #16a085;
+    background: #f3f4f6;
 }
-
-/* CAMPO DE MENSAGEM */
 
 .entrada {
     display: flex;
     gap: 8px;
     padding: 15px;
-    background: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    background: white;
 }
 
 .entrada input {
     flex: 1;
     padding: 12px;
-    border: 1px solid #d5dadd;
+    border: 1px solid #d1d5db;
     border-radius: 9px;
     outline: none;
-    font-size: 14px;
-}
-
-.entrada input:focus {
-    border-color: #16a085;
 }
 
 .entrada button {
     padding: 12px 18px;
     border: none;
     border-radius: 9px;
-    background: #16a085;
+    background: #374151;
     color: white;
     cursor: pointer;
-    font-weight: 600;
-}
-
-.entrada button:hover {
-    background: #12806a;
-}
-.entrada,
-.botoes {
-    position: relative;
-    z-index: 10;
-}
-
-.entrada input,
-.entrada button,
-.botoes button {
-    position: relative;
-    z-index: 11;
 }
