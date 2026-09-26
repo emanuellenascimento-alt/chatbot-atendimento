@@ -14,7 +14,8 @@ function responder(mensagem) {
     }
 
     if (mensagem.includes("atendente")) {
-        return "Claro! Você pode falar com um atendente pelo WhatsApp.";
+    return "Claro! Clique no botão abaixo para falar com um atendente.";
+}
     }
 
     if (
