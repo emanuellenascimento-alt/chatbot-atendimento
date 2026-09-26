@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.chatbot {
+    width: 420px;
+    max-width: 95%;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.cabecalho {
+    background: #2563eb;
+    color: white;
+    padding: 20px;
+}
+
+.cabecalho h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.cabecalho p {
+    margin: 5px 0 0;
+    opacity: 0.9;
+}
+
+.chat {
+    height: 350px;
+    padding: 20px;
+    overflow-y: auto;
+    background: #f8fafc;
+}
+
+.mensagem {
+    max-width: 80%;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    border-radius: 14px;
+    line-height: 1.4;
+}
+
+.bot {
+    background: #e2e8f0;
+    color: #1e293b;
+}
+
+.usuario {
+    background: #2563eb;
+    color: white;
+    margin-left: auto;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    padding: 15px;
+}
+
+.botoes button {
+    padding: 10px;
+    border: 1px solid #dbe3ef;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.botoes button:hover {
+    background: #eff6ff;
+}
+
+.entrada {
+    display: flex;
+    gap: 8px;
+    padding: 15px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.entrada input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    outline: none;
+}
+
+.entrada button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
